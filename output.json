@@ -1,0 +1,258 @@
+{
+  "abstractText": "Conducting literature reviews for scientific papers is essential for understanding research, its limitations, and building on existing work. It is a tedious task which makes an automatic literature review generator appealing. Unfortunately, many existing works that generate such reviews using Large Language Models (LLMs) have significant limitations. They tend to hallucinate—generate non-factual information—and ignore the latest research they have not been trained on. To address these limitations, we propose a toolkit that operates on Retrieval Augmented Generation (RAG) principles, specialized prompting and instructing techniques with the help of LLMs. Our system first initiates a web search to retrieve relevant papers by summarizing user-provided abstracts into keywords using an off-the-shelf LLM. Authors can enhance the search by supplementing it with relevant papers or keywords, contributing to a tailored retrieval process. Second, the system re-ranks the retrieved papers based on the user-provided abstract. Finally, the related work section is generated based on the re-ranked results and the abstract. There is a substantial reduction in time and effort for literature review compared to traditional methods, establishing our toolkit as an efficient alternative. Our open-source toolkit is accessible at https://github.com/ shubhamagarwal92/LitLLM and Huggingface space (https://huggingface.co/spaces/ shubhamagarwal92/LitLLM) with the video demo at https://youtu.be/E2ggOZBAFw0",
+  "authors": [{
+    "affiliations": [],
+    "name": "Shubham Agarwal"
+  }, {
+    "affiliations": [],
+    "name": "Issam H. Laradji"
+  }, {
+    "affiliations": [],
+    "name": "Laurent Charlin"
+  }, {
+    "affiliations": [],
+    "name": "Christopher Pal"
+  }],
+  "id": "SP:7468189a38f855a9fa798879432a5b7e8e633c9d",
+  "references": [{
+    "authors": ["References Abubakar Abid", "Ali Abdalla", "Ali Abid", "Dawood Khan", "Abdulrahman Alfozan", "James Zou."],
+    "title": "Gradio: Hassle-free sharing and testing of ml models in the wild",
+    "venue": "arXiv preprint arXiv:1906.02569.",
+    "year": 2019
+  }, {
+    "authors": ["Shubham Agarwal", "Issam Laradji", "Laurent Charlin", "Christopher Pal"],
+    "title": "LLMs for Literature Review generation: Are we there yet",
+    "venue": "Under submission",
+    "year": 2024
+  }, {
+    "authors": ["Sai Anirudh Athaluri", "Sandeep Varma Manthena", "V S R Krishna Manoj Kesapragada", "Vineel Yarlagadda", "Tirth Dave", "Rama Tulasi Siri Duddumpudi"],
+    "title": "Exploring the boundaries of reality: Investigating the phenomenon of artificial intelligence hallucination",
+    "year": 2023
+  }, {
+    "authors": ["Nicholas Crispino", "Kyle Montgomery", "Fankun Zeng", "Dawn Song", "Chenguang Wang."],
+    "title": "Agent instructs large language models to be general zeroshot reasoners",
+    "venue": "ArXiv, abs/2310.03710.",
+    "year": 2023
+  }, {
+    "authors": ["Jane Dwivedi-Yu", "Timo Schick", "Zhengbao Jiang", "Maria Lomeli", "Patrick Lewis", "Gautier Izacard", "Edouard Grave", "Sebastian Riedel", "Fabio Petroni."],
+    "title": "Editeval: An instruction-based benchmark for text improvements",
+    "venue": "arXiv preprint arXiv:2209.13331.",
+    "year": 2022
+  }, {
+    "authors": ["Yunfan Gao", "Yun Xiong", "Xinyu Gao", "Kangxiang Jia", "Jinliu Pan", "Yuxi Bi", "Yi Dai", "Jiawei Sun", "Haofen Wang."],
+    "title": "Retrieval-augmented generation for large language models: A survey",
+    "venue": "arXiv preprint arXiv:2312.10997.",
+    "year": 2023
+  }, {
+    "authors": ["Michael Haman", "Milan Školník."],
+    "title": "Using chatgpt to conduct a literature review",
+    "venue": "Accountability in Research, pages 1–3.",
+    "year": 2023
+  }, {
+    "authors": ["Yupeng Hou", "Junjie Zhang", "Zihan Lin", "Hongyu Lu", "Ruobing Xie", "Julian McAuley", "Wayne Xin Zhao."],
+    "title": "Large language models are zero-shot rankers for recommender systems",
+    "venue": "ArXiv, abs/2305.08845.",
+    "year": 2023
+  }, {
+    "authors": ["Jingshan Huang", "Ming Tan."],
+    "title": "The role of chatgpt in scientific communication: writing better scientific review articles",
+    "venue": "American Journal of Cancer Research, 13(4):1148.",
+    "year": 2023
+  }, {
+    "authors": ["Lei Huang", "Weijiang Yu", "Weitao Ma", "Weihong Zhong", "Zhangyin Feng", "Haotian Wang", "Qianglong Chen", "Weihua Peng", "Xiaocheng Feng", "Bing Qin"],
+    "title": "A survey on hallucination",
+    "year": 2023
+  }, {
+    "authors": ["Jihyeok Kim", "Seungtaek Choi", "Reinald Kim Amplayo", "Seung-won Hwang."],
+    "title": "Retrieval-augmented controllable review generation",
+    "venue": "Proceedings of the 28th International Conference on Computational Linguistics, pages 2284–2295.",
+    "year": 2020
+  }, {
+    "authors": ["Takeshi Kojima", "Shixiang Shane Gu", "Machel Reid", "Yutaka Matsuo", "Yusuke Iwasawa."],
+    "title": "Large language models are zero-shot reasoners",
+    "venue": "Advances in neural information processing systems, 35:22199– 22213.",
+    "year": 2022
+  }, {
+    "authors": ["Patrick Lewis", "Ethan Perez", "Aleksandra Piktus", "Fabio Petroni", "Vladimir Karpukhin", "Naman Goyal", "Heinrich Küttler", "Mike Lewis", "Wen-tau Yih", "Tim Rocktäschel"],
+    "title": "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+    "year": 2020
+  }, {
+    "authors": ["Hang Li", "Jindong Gu", "Rajat Koner", "Sahand Sharifzadeh", "Volker Tresp"],
+    "title": "Do dall-e and flamingo understand each other",
+    "venue": "In Proceedings of the IEEE/CVF International Conference on Computer Vision,",
+    "year": 2023
+  }, {
+    "authors": ["Junlong Li", "Zhuosheng Zhang", "Hai Zhao"],
+    "title": "Self-prompting large language models for zero-shot open-domain qa",
+    "year": 2022
+  }, {
+    "authors": ["Junyi Li", "Jie Chen", "Ruiyang Ren", "Xiaoxue Cheng", "Wayne Xin Zhao", "Jian-Yun Nie", "Ji-Rong Wen."],
+    "title": "The dawn after the dark: An empirical study on factuality hallucination in large language models",
+    "venue": "arXiv preprint arXiv:2401.03205.",
+    "year": 2024
+  }, {
+    "authors": ["Xiang Lisa Li", "Percy Liang."],
+    "title": "Prefix-tuning: Optimizing continuous prompts for generation",
+    "venue": "arXiv preprint arXiv:2101.00190.",
+    "year": 2021
+  }, {
+    "authors": ["Shangqing Liu", "Yu Chen", "Xiaofei Xie", "Jingkai Siow", "Yang Liu."],
+    "title": "Retrieval-augmented generation for code summarization via hybrid gnn",
+    "venue": "arXiv preprint arXiv:2006.05405.",
+    "year": 2020
+  }, {
+    "authors": ["Adian Liusie", "Potsawee Manakul", "Mark John Francis Gales"],
+    "title": "Llm comparative assessment: Zeroshot nlg evaluation through pairwise comparisons using large language models",
+    "year": 2023
+  }, {
+    "authors": ["Kyle Lo", "Lucy Lu Wang", "Mark Neumann", "Rodney Kinney", "Daniel Weld."],
+    "title": "S2ORC: The semantic scholar open research corpus",
+    "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, pages 4969–4983, Online. Asso-",
+    "year": 2020
+  }, {
+    "authors": ["Yao Lu", "Yue Dong", "Laurent Charlin."],
+    "title": "MultiXScience: A large-scale dataset for extreme multidocument summarization of scientific articles",
+    "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP),",
+    "year": 2020
+  }, {
+    "authors": ["Xueguang Ma", "Xinyu Zhang", "Ronak Pradeep", "Jimmy Lin."],
+    "title": "Zero-shot listwise document reranking with a large language model",
+    "venue": "arXiv preprint arXiv:2305.02156.",
+    "year": 2023
+  }, {
+    "authors": ["Md Rizwan Parvez", "Wasi Uddin Ahmad", "Saikat Chakraborty", "Baishakhi Ray", "Kai-Wei Chang."],
+    "title": "Retrieval augmented code generation and summarization",
+    "venue": "arXiv preprint arXiv:2108.11601.",
+    "year": 2021
+  }, {
+    "authors": ["Ronak Pradeep", "Sahel Sharifymoghaddam", "Jimmy Lin."],
+    "title": "Rankvicuna: Zero-shot listwise document reranking with open-source large language models",
+    "venue": "arXiv preprint arXiv:2309.15088.",
+    "year": 2023
+  }, {
+    "authors": ["Ronak Pradeep", "Sahel Sharifymoghaddam", "Jimmy Lin"],
+    "title": "2023b. Rankzephyr: Effective and robust zeroshot listwise reranking is a breeze! arXiv preprint arXiv:2312.02724",
+    "year": 2023
+  }, {
+    "authors": ["Guanghui Qin", "Jason Eisner."],
+    "title": "Learning how to ask: Querying LMs with mixtures of soft prompts",
+    "venue": "arXiv preprint arXiv:2104.06599.",
+    "year": 2021
+  }, {
+    "authors": ["Leigang Qu", "Meng Liu", "Jianlong Wu", "Zan Gao", "Liqiang Nie."],
+    "title": "Dynamic modality interaction modeling for image-text retrieval",
+    "venue": "Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval.",
+    "year": 2021
+  }, {
+    "authors": ["Ehud Reiter", "Robert Dale."],
+    "title": "Building applied natural language generation systems",
+    "venue": "Natural Language Engineering, 3(1):57–87.",
+    "year": 1997
+  }, {
+    "authors": ["Fobo Shi", "Peijun Qing", "D. Yang", "Nan Wang", "Youbo Lei", "H. Lu", "Xiaodong Lin."],
+    "title": "Prompt space optimizing few-shot reasoning success with large language models",
+    "venue": "ArXiv, abs/2306.03799.",
+    "year": 2023
+  }, {
+    "authors": ["Krishna Srinivasan", "Karthik Raman", "Jiecao Chen", "Michael Bendersky", "Marc Najork."],
+    "title": "Wit: Wikipedia-based image text dataset for multimodal multilingual machine learning",
+    "venue": "Proceedings of the 44th International ACM SIGIR Conference on Re-",
+    "year": 2021
+  }, {
+    "authors": ["Amanda Stent", "Rashmi Prasad", "Marilyn Walker."],
+    "title": "Trainable sentence planning for complex information presentations in spoken dialog systems",
+    "venue": "Proceedings of the 42nd Annual Meeting of the Association for Computational Linguistics (ACL-04),",
+    "year": 2004
+  }, {
+    "authors": ["Weiwei Sun", "Lingyong Yan", "Xinyu Ma", "Pengjie Ren", "Dawei Yin", "Zhaochun Ren."],
+    "title": "Is chatgpt good at search? investigating large language models as re-ranking agent",
+    "venue": "arXiv preprint arXiv:2304.09542.",
+    "year": 2023
+  }, {
+    "authors": ["Ross Taylor", "Marcin Kardas", "Guillem Cucurull", "Thomas Scialom", "Anthony Hartshorn", "Elvis Saravia", "Andrew Poulton", "Viktor Kerkez", "Robert Stojnic."],
+    "title": "Galactica: A large language model for science",
+    "venue": "arXiv preprint arXiv:2211.09085.",
+    "year": 2022
+  }, {
+    "authors": ["David Thulke", "Nico Daheim", "Christian Dugast", "Hermann Ney."],
+    "title": "Efficient retrieval augmented generation from unstructured knowledge for taskoriented dialog",
+    "venue": "arXiv preprint arXiv:2102.04643.",
+    "year": 2021
+  }, {
+    "authors": ["SM Tonmoy", "SM Zaman", "Vinija Jain", "Anku Rani", "Vipula Rawte", "Aman Chadha", "Amitava Das."],
+    "title": "A comprehensive survey of hallucination mitigation techniques in large language models",
+    "venue": "arXiv preprint arXiv:2401.01313.",
+    "year": 2024
+  }, {
+    "authors": ["Jason Wei", "Maarten Bosma", "Vincent Zhao", "Kelvin Guu", "Adams Wei Yu", "Brian Lester", "Nan Du", "Andrew M. Dai", "Quoc V. Le."],
+    "title": "Finetuned language models are zero-shot learners",
+    "venue": "ArXiv, abs/2109.01652.",
+    "year": 2021
+  }, {
+    "authors": ["Jason Wei", "Xuezhi Wang", "Dale Schuurmans", "Maarten Bosma", "Fei Xia", "Ed H Chi", "Quoc V Le", "Denny Zhou"],
+    "title": "Chain-of-thought prompting elicits reasoning in large language models",
+    "venue": "In Advances in Neural Information Processing Systems",
+    "year": 2022
+  }, {
+    "authors": ["Jiahui Yu", "Zirui Wang", "Vijay Vasudevan", "Legg Yeung", "Mojtaba Seyedhosseini", "Yonghui Wu."],
+    "title": "Coca: Contrastive captioners are image-text foundation models",
+    "venue": "Trans. Mach. Learn. Res., 2022.",
+    "year": 2022
+  }, {
+    "authors": ["Xinyu Zhang", "Sebastian Hofstätter", "Patrick Lewis", "Raphael Tang", "Jimmy Lin."],
+    "title": "Rank-withoutgpt: Building gpt-independent listwise rerankers on open-source large language models",
+    "venue": "arXiv preprint arXiv:2312.02969.",
+    "year": 2023
+  }, {
+    "authors": ["Zijia Zhao", "Longteng Guo", "Xingjian He", "Shuai Shao", "Zehuan Yuan", "Jing Liu."],
+    "title": "Mamo: Finegrained vision-language representations learning with masked multimodal modeling",
+    "venue": "Proceedings of the 46th International ACM SIGIR Conference on",
+    "year": 2022
+  }, {
+    "authors": ["Yongchao Zhou", "Andrei Ioan Muresanu", "Ziwen Han", "Keiran Paster", "Silviu Pitis", "Harris Chan", "Jimmy Ba."],
+    "title": "Large language models are human-level prompt engineers",
+    "venue": "arXiv preprint arXiv:2211.01910.",
+    "year": 2022
+  }, {
+    "authors": ["Yutao Zhu", "Huaying Yuan", "Shuting Wang", "Jiongnan Liu", "Wenhan Liu", "Chenlong Deng", "Zhicheng Dou", "Ji-Rong Wen."],
+    "title": "Large language models for information retrieval: A survey",
+    "venue": "arXiv preprint arXiv:2308.07107.",
+    "year": 2023
+  }],
+  "sections": [{
+    "heading": "1 Introduction",
+    "text": "Scientists have long used NLP systems like search engines to find and retrieve relevant papers. Scholarly engines, including Google Scholar, Microsoft Academic Graph, and Semantic Scholar, provide additional tools and structure to help researchers further. Following recent advances in large language models (LLMs), a new set of systems pro-\nvides even more advanced features. For example, Explainpaper1 helps explain the contents of papers, and Writefull2 helps with several writing tasks, including abstract and title generation. There are, of course, many other tasks where similar technologies could be helpful.\nSystems that help researchers with literature reviews hold promising prospects. The literature review is a difficult task that can be decomposed into several sub-tasks, including retrieving relevant papers and generating a related works section that contextualizes the proposed work compared to the existing literature. It is also a task where factual correctness is essential. In that sense, it is a challenging task for current LLMs, which are known to hallucinate. Overall, creating tools to help researchers more rapidly identify, summarize and contextualize relevant prior work could significantly help the research community.\nRecent works explore the task of literature review in parts or in full. For example, Lu et al. (2020) proposes generating the related works section of a paper using its abstract and a list of (relevant) references. Researchers also look at the whole task and build systems using LLMs like ChatGPT for literature review (Haman and Školník, 2023; Huang and Tan, 2023). While these LLMs tend to generate high-quality text, they are prone to hallucinations (Athaluri et al., 2023). For example, the Galactica system was developed to reason about scientific knowledge (Taylor et al., 2022). While it outperforms contemporary models on various scientific tasks, it generates made-up content like inaccurate citations and imaginary papers.3\nAs a step forward, we explore retrievalaugmented-generation (RAG) to improve factual correctness (Lewis et al., 2020). The idea is to use the retrieval mechanism to obtain a relevant list of\n1https://www.explainpaper.com/ 2https://x.writefull.com/ 3see e.g., What Meta Learned from Galactica\nar X\niv :2\n40 2.\n01 78\n8v 1\n[ cs\n.C L\n] 2\nF eb\n2 02\n4\nexisting papers to be cited which provides relevant contextual knowledge for LLM based generation.\nLitLLM is an interactive tool to help scientists write the literature review or related work section of a scientific paper starting from a user-provided abstract (see Figure 1). The specific objectives of this work are to create a system to help users navigate through research papers and write a literature review for a given paper or project. Our main contributions are:\n• We provide a system based on a modular pipeline that conducts a literature review based on a user-proposed abstract. • We use Retrieval Augmented Generation (RAG) techniques to condition the generated related work on factual content and avoid hallucinations using multiple search techniques. • We incorporate sentence-based planning to promote controllable generation."
+  }, {
+    "heading": "2 Related Work",
+    "text": "LLMs have demonstrated significant capabilities in storing factual knowledge and achieving stateof-the-art results when fine-tuned on downstream\nNatural Language Processing (NLP) tasks (Lewis et al., 2020).\nHowever, they also face challenges such as hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes (Huang et al., 2023; Gao et al., 2023; Li et al., 2024). These limitations have motivated the development of RAG (Retrieval Augmented Generation), which incorporates knowledge from external databases to enhance the accuracy and credibility of the models, particularly for knowledge-intensive tasks (Gao et al., 2023). RAG has emerged as a promising solution to the challenges faced by LLMs. It synergistically merges LLMs’ intrinsic knowledge with the vast, dynamic repositories of external databases (Gao et al., 2023). This approach allows for continuous knowledge updates and integration of domainspecific information in an attempt to limit the effect of outdated knowledge. The proposed work builds upon the advancements around RAG to provide a more efficient solution for academic writing.\nOn the other hand, there has been a notable emphasis on utilizing Large Language Models (LLMs) for tasks related to information retrieval and ranking (Zhu et al., 2023). The work by Sun et al. (2023) leverages generative LLMs such as ChatGPT and GPT-4 for relevance ranking in information retrieval, demonstrating that these models can deliver competitive results to state-of-the-art supervised methods. Pradeep et al. (2023b,a) introduce different open-source LLM for listwise zeroshot reranking, further motivating the proposed approach of using LLMs for reranking in our work.\nThe exploration of large language models (LLMs) and their zero-shot abilities has been a significant focus in recent research. For instance, one study investigated using LLMs in recommender systems, demonstrating their promising zero-shot ranking abilities, although they struggled with the order of historical interactions and position bias (Hou et al., 2023). Another study improved the zero-shot learning abilities of LLMs through instruction tuning, which led to substantial improvements in performance on unseen tasks (Wei et al., 2021). A similar approach was taken to enhance the zero-shot reasoning abilities of LLMs, with the introduction of an autonomous agent to instruct the reasoning process, resulting in significant performance boosts (Crispino et al., 2023). The application of LLMs has also been explored in the context of natural language generation (NLG) assessment, with comparative assessment found to be\nsuperior to prompt scoring (Liusie et al., 2023). In the domain of Open-Domain Question Answering (ODQA), a Self-Prompting framework was proposed to utilize the massive knowledge stored in LLMs, leading to significant improvements over previous methods (Li et al., 2022). Prompt engineering has been identified as a key technique for enhancing the abilities of LLMs, with various strategies being explored (Shi et al., 2023).4"
+  }, {
+    "heading": "3 Pipeline",
+    "text": "Figure 2 provides an overview of the pipeline. The user provides a draft of the abstract or a research idea. We use LLM to first summarize the abstract in keywords that can be used as a query for search engines. Optionally, the users could provide relevant keywords to improve search results. This query is passed to the search engine, which retrieves relevant papers with the corresponding information, such as abstracts and open-access PDF URLs. These retrieved abstracts with the original query abstract are used as input to the other LLM Re-ranker, which provides a listwise ranking of the papers based on the relevance to the query abstract. These re-ranked abstracts with the original query are finally passed to the LLM generator, which generates the related work section of the paper. Recently, Agarwal et al. (2024) showed that prompting the LLMs with the sentence plans results in reduced hallucinations in the generation outputs. These plans contain information about the number of sentences and the citation description on each line, providing control to meet author preferences. We include this sentence-based planning in the LLM generator as part of this system. In the following, we provide more details about each of the modules."
+  }, {
+    "heading": "3.1 Paper Retrieval Module",
+    "text": "In our toolkit, we retrieve relevant papers using the Semantic Scholar API. Other platforms could be used, but the S2 Platform is well-adapted to this use case. It is a large-scale academic corpus comprising 200M+ metadata records across multiple research areas, providing information about papers’ metadata, authors, paper embedding, etc. The Recommendations API also provides relevant papers similar to any seed paper. Figure 3 shows our sys-\n4This paragraph was generated using our platform with some minor modifications based on a slightly different version of our abstract.\ntem’s different strategies. We describe these three settings that we use to search for references:\n• User provides an abstract or a research idea (roughly the length of the abstract). We prompt an LLM (see Figure 4) to summarize this abstract in keywords which can be used as a search query with most APIs. • Users can optionally also provide keywords that can improve search results. This is similar (in spirit) to how researchers search for related work with a search engine. This is particularly useful in interdisciplinary research, and authors would like to include the latest research from a particular domain, which could not be captured much in the abstract. • Lastly, any seed paper the user finds relevant enough to their idea could be used with the Recommendations API from search engines to provide other closely related papers."
+  }, {
+    "heading": "3.2 Paper Re-Ranking Module",
+    "text": "Recent efforts have explored the application of proprietary LLMs for ranking (Sun et al., 2023; Ma et al., 2023) as well as open-source models like\n(Pradeep et al., 2023a,b). These approaches provide a combined list of passages directly as input to the model and retrieve the re-ordered ranking list (Zhang et al., 2023). Typically, a retriever first filters top-k potential candidates, which are then re-ranked by an LLM to provide the final output list. In our work, we use the instructional permutation generation approach (Sun et al., 2023) where the model is prompted to generate a permutation of the different papers in descending order based on the relevance to the user-provided abstract, thus producing an ordered list of preferences against providing intermediate scores. Figure 5 showcases the prompt we used for LLM-based re-ranking."
+  }, {
+    "heading": "3.3 Summary Generation Module",
+    "text": "We explore two strategies for generation: (1) Zeroshot generation and (2) Plan-based generation, which relies on sentence plans for controllable generation, described in the following"
+  }, {
+    "heading": "3.3.1 Zero-shot generation",
+    "text": "While LLMs can potentially search and generate relevant papers from their parametric memory and trained data, they are prone to hallucinating and generating non-factual content. Retrieval augmented generation, first introduced in Parvez et al. (2021) for knowledge tasks, addresses this by augmenting the generation model with an information retrieval module. The RAG principles have been subsequently used for dialogue generation in taskoriented settings (Thulke et al., 2021), code generation (Liu et al., 2020; Parvez et al., 2021) and\nproduct review generation (Kim et al., 2020). RAG drastically reduces hallucinations in the generated output (Gao et al., 2023; Tonmoy et al., 2024).\nOur work builds upon the principles of RAG, where we retrieve the relevant papers based on the query and augment them as context for generating the literature review. This also allows the system to be grounded in the retrieved information and be updated with the latest research where the training data limits the parametric knowledge of the LLM. Figure 6 shows our system’s prompt for effective Retrieval Augmented Generation (RAG)."
+  }, {
+    "heading": "3.3.2 Plan based generation",
+    "text": "To get the best results from LLM, recent research shifts focus on designing better prompts (Prompt Engineering) including 0-shot chain-of-thought prompting (Kojima et al., 2022; Zhou et al., 2022), few-shot prompting (Brown et al., 2020) techniques, few-shot Chain-of-thought prompting (Wei et al., 2022) and in-context prompting (Li and Liang, 2021; Qin and Eisner, 2021). However, the longer context of our problem statement (query paper and multiple relevant papers) hinders the application of these techniques for response generation.\nWe utilized sentence plan-based prompting tech-\nniques drawing upon insights from the literature of traditional modular Natural Language Generation (NLG) pipelines with intermediary steps of sentence planning and surface realization (Reiter and Dale, 1997; Stent et al., 2004). These plans provide a sentence structure of the expected output, which efficiently guides the LLM in generating the literature review in a controllable fashion as demonstrated in concurrent work (Agarwal et al., 2024). Figure 7 (in Appendix) shows the prompt for planbased generation with an example template as:\nPlease generate {num_sentences} sentences in {num_words} words. Cite {cite_x} at line {line_x}. Cite {cite_y} at line {line_y}."
+  }, {
+    "heading": "4 Implementation Details",
+    "text": "We build our system using Gradio (Abid et al., 2019), which provides a nice interface to quickly and efficiently build system demos. Our user interface is also available at HuggingFace Space5. We query the Semantic Scholar API available through the Semantic Scholar Open Data Platform (Lo et al., 2020; Kinney et al., 2023) to search for the relevant papers. Specifically, we use the Academic Graph6 and Recommendations7 API endpoint. In this work, we use OpenAI API8 to generate results for LLM using GPT-3.5-turbo and GPT-4 model. At the same time, our modular pipeline allows using any LLM (proprietary or open-sourced) for different components. We also allow the end-user to sort the retrieved papers by relevance (default S2 results), citation count, or year."
+  }, {
+    "heading": "5 User Experience",
+    "text": "As a preliminary study, we provided access to our user interface to 5 different researchers who worked through the demo to write literature reviews and validate the system’s efficacy. We also provide an example in the demo with an abstract for a quick start. Particularly, the users found the 0-shot generation to be more informative about the literature in general while the plan-based generation to be more accessible and tailored for their research paper, as also evident in our demo video.9. Table 1 (in Ap-\n5https://huggingface.co/spaces/ shubhamagarwal92/LitLLM\n6https://api.semanticscholar.org/api-docs/ graph\n7https://api.semanticscholar.org/api-docs/ recommendations\n8https://platform.openai.com/docs/guides/gpt 9https://youtu.be/E2ggOZBAFw0\npendix) shows the output-related work for a recent paper (Li et al., 2023) that was randomly chosen with a number of cited papers as 4. Our system generated an informative query Multimodal Research: Image-Text Model Interaction and retrieved relevant papers where the top recommended paper was also cited in the original paper. While zero-shot generation provides valuable insights into existing literature, plan-based generation produces a more succinct and readily usable literature review."
+  }, {
+    "heading": "6 Conclusion and Future Work",
+    "text": "In this work, we introduce and describe LitLLM, a system which can generate literature reviews in a few clicks from an abstract using off-the-shelf LLMs. This LLM-powered toolkit relies on the RAG with a re-ranking strategy to generate a literature review with attribution. Our auxiliary tool allows researchers to actively search for related work based on a preliminary research idea, research proposal or even a full abstract. We present a modular pipeline that can be easily adapted to include the next generation of LLMs and other domains, such as news, by changing the source of retrieval information.\nGiven the growing impact of different LLMbased writing assistants, we are optimistic that our system may aid researchers in searching relevant papers and improve the quality of automatically generated related work sections of a paper. While our system shows promise as a helpful research assistant, we believe that their usage should be disclosed to the readers, and authors should also observe caution in eliminating any possible hallucinations.\nIn the future, we would also like to explore academic search through multiple APIs, such as Google Scholar. This work only considered abstracts of the query paper and the retrieved papers, which creates a bottleneck in effective literature review generation. With the advent of longer context LLMs, we envision our system ingesting the whole paper (potentially leveraging an efficient LLM-based PDF parser) to provide a more relevant background of the related research. We consider our approach as an initial step for building intelligent research assistants which could help academicians through an interactive setting (Dwivedi-Yu et al., 2022)."
+  }],
+  "title": "LitLLM: A Toolkit for Scientific Literature Review",
+  "year": 2024
+}
